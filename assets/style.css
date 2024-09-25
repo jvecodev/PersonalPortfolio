@@ -371,21 +371,33 @@ body.dark {
     transform: scale(1.02);
     transition: all 0.3s ease-in-out;
 }
+
+
  .Skills{
     display: flex;
-    flex-direction: column;
-    width: 70%;
+    flex-direction: column; 
+    width: 100%;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
     padding: 3rem;
     margin: 50px;
     gap: 3rem;
 }
 .Skills > .general{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10rem;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.Skills > .general > .sólido > .first-solid, .second-solid, .third-solid{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .Skills > h1{
@@ -407,8 +419,8 @@ body.dark {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
-    width: 300px;
+    
+    
 
     
 }
@@ -417,25 +429,30 @@ body.dark {
 
 .Skills  .desenvolvimento{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
-    width: 300px;
+    
 
 
 }
 
 .Skills > .general h3{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: lighter;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%; 
     border: #103778 1px solid;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
     filter: contrast(1.5);
 }
+.Skills > .general > .sólido >  .second-solid > h3 > button{
+    
+    padding: 0.2rem;
+}
+
 
 .Skills > .general h3:hover{
     scale: 1.09;
@@ -445,7 +462,7 @@ body.dark {
 .Skills > .general button{
     border: none;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
     font-size: 1rem;
     
